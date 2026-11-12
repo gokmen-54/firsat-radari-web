@@ -28,7 +28,7 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 
-    <!-- Google Structured Data (JSON-LD) -->
+    <!-- Google Structured Data (JSON-LD) with FAQ Schema for Search Rich Snippets -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -38,7 +38,7 @@
           "@id": "https://gokmen-54.github.io/firsat-radari-web/#website",
           "name": "Fırsat Radarı",
           "url": "https://gokmen-54.github.io/firsat-radari-web/",
-          "description": "Amazon Türkiye canlı fırsat ve kupon takip radarı."
+          "description": "Amazon Türkiye canlı fırsat, kupon ve promosyon kodu takip radarı."
         },
         {
           "@type": "ItemList",
@@ -459,86 +459,33 @@
                 "url": "https://www.amazon.com.tr/dp/B0BX12DL56?tag=firsatavcis0b-21"
               }
             }
-          },
-          {
-            "@type": "ListItem",
-            "position": 27,
-            "item": {
-              "@type": "Product",
-              "name": "Gülümseten Kasım fırsatı",
-              "image": "https://m.media-amazon.com/images/I/613+yk3nTVL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
-              "offers": {
-                "@type": "Offer",
-                "price": "4699.00",
-                "priceCurrency": "TRY",
-                "availability": "https://schema.org/InStock",
-                "url": "https://www.amazon.com.tr/dp/B0FQ642SG9?tag=firsatavcis0b-21"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 28,
-            "item": {
-              "@type": "Product",
-              "name": "Gülümseten Kasım fırsatı",
-              "image": "https://m.media-amazon.com/images/I/81oQesFPjdL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
-              "offers": {
-                "@type": "Offer",
-                "price": "43649.03",
-                "priceCurrency": "TRY",
-                "availability": "https://schema.org/InStock",
-                "url": "https://www.amazon.com.tr/dp/B0BV6STN1D?tag=firsatavcis0b-21"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 29,
-            "item": {
-              "@type": "Product",
-              "name": "Gülümseten Kasım fırsatı",
-              "image": "https://m.media-amazon.com/images/I/61Gshfq8bKL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
-              "offers": {
-                "@type": "Offer",
-                "price": "69599.00",
-                "priceCurrency": "TRY",
-                "availability": "https://schema.org/InStock",
-                "url": "https://www.amazon.com.tr/dp/B0H1JC7MS2?tag=firsatavcis0b-21"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 30,
-            "item": {
-              "@type": "Product",
-              "name": "30 günün en düşük fiyatı",
-              "image": "https://m.media-amazon.com/images/I/71HvqbgjJGL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
-              "offers": {
-                "@type": "Offer",
-                "price": "44369.00",
-                "priceCurrency": "TRY",
-                "availability": "https://schema.org/InStock",
-                "url": "https://www.amazon.com.tr/dp/B0H2FJ6VL8?tag=firsatavcis0b-21"
-              }
-            }
           }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Amazon promosyon kodu ödeme adımında nasıl kullanılır?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sepetinizi hazırlayıp Alışverişi Tamamla butonuna tıklayın. Ödeme aşamasında 'Hediye kartı, promosyon kodu veya kupon ekleyin' kutucuğuna GULUMSE100, GULUMSE200, GULUMSE500 veya APP150 kodlarından birini yapıştırarak Uygula deyin."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Amazon Gülümseten Kasım kuponları nerede bulunur?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Amazon Türkiye'nin günlük güncellenen tüm kuponlu ürünleri ve sepet indirim kodları Fırsat Radarı üzerinde 7/24 canlı olarak listelenmektedir."
+              }
+            }
           ]
         }
       ]
     }
     </script>
-</head>
-    <meta property="og:description" content="Günün en çok indirime giren teknoloji ve ev ürünlerini anlık takip edin.">
-    <meta property="og:type" content="website">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-black min-h-screen flex flex-col justify-between">
 
@@ -1564,144 +1511,37 @@
             </div>
         </div>
         
-        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between overflow-hidden group">
-            <div class="relative bg-slate-50 aspect-square p-6 flex items-center justify-center overflow-hidden border-b border-slate-100">
-                
-                <img src="https://m.media-amazon.com/images/I/613+yk3nTVL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte" alt="Gülümseten Kasım fırsatı" class="w-full h-full object-contain group-hover:scale-105 transition duration-500" loading="lazy">
-            </div>
-            
-            <div class="p-5 flex-1 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-1.5 text-[11px] font-bold text-amber-600 uppercase tracking-wider mb-1.5">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                        Amazon Fırsatı
-                    </div>
-                    <h3 class="font-bold text-slate-800 text-sm leading-snug line-clamp-2 mb-2 group-hover:text-amber-600 transition">
-                        Gülümseten Kasım fırsatı
-                    </h3>
-                </div>
-
-                <div class="pt-4 border-t border-slate-100">
-                    <div class="flex items-baseline justify-between">
-                        <div>
-                            
-                            <div class="text-xl font-black text-slate-900 tracking-tight">4.699,00 TL</div>
-                        </div>
-                    </div>
-                    
-                    
-                    <a href="https://www.amazon.com.tr/dp/B0FQ642SG9?tag=firsatavcis0b-21" target="_blank" rel="noopener nofollow" class="mt-4 w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-bold text-xs py-3 px-4 rounded-xl shadow-md shadow-amber-500/20 transition flex items-center justify-center gap-2">
-                        <span>Amazon'da İncele & Satın Al</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between overflow-hidden group">
-            <div class="relative bg-slate-50 aspect-square p-6 flex items-center justify-center overflow-hidden border-b border-slate-100">
-                
-                <img src="https://m.media-amazon.com/images/I/81oQesFPjdL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte" alt="Gülümseten Kasım fırsatı" class="w-full h-full object-contain group-hover:scale-105 transition duration-500" loading="lazy">
-            </div>
-            
-            <div class="p-5 flex-1 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-1.5 text-[11px] font-bold text-amber-600 uppercase tracking-wider mb-1.5">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                        Amazon Fırsatı
-                    </div>
-                    <h3 class="font-bold text-slate-800 text-sm leading-snug line-clamp-2 mb-2 group-hover:text-amber-600 transition">
-                        Gülümseten Kasım fırsatı
-                    </h3>
-                </div>
-
-                <div class="pt-4 border-t border-slate-100">
-                    <div class="flex items-baseline justify-between">
-                        <div>
-                            
-                            <div class="text-xl font-black text-slate-900 tracking-tight">43.649,03 TL</div>
-                        </div>
-                    </div>
-                    
-                    
-                    <a href="https://www.amazon.com.tr/dp/B0BV6STN1D?tag=firsatavcis0b-21" target="_blank" rel="noopener nofollow" class="mt-4 w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-bold text-xs py-3 px-4 rounded-xl shadow-md shadow-amber-500/20 transition flex items-center justify-center gap-2">
-                        <span>Amazon'da İncele & Satın Al</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between overflow-hidden group">
-            <div class="relative bg-slate-50 aspect-square p-6 flex items-center justify-center overflow-hidden border-b border-slate-100">
-                
-                <img src="https://m.media-amazon.com/images/I/61Gshfq8bKL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte" alt="Gülümseten Kasım fırsatı" class="w-full h-full object-contain group-hover:scale-105 transition duration-500" loading="lazy">
-            </div>
-            
-            <div class="p-5 flex-1 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-1.5 text-[11px] font-bold text-amber-600 uppercase tracking-wider mb-1.5">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                        Amazon Fırsatı
-                    </div>
-                    <h3 class="font-bold text-slate-800 text-sm leading-snug line-clamp-2 mb-2 group-hover:text-amber-600 transition">
-                        Gülümseten Kasım fırsatı
-                    </h3>
-                </div>
-
-                <div class="pt-4 border-t border-slate-100">
-                    <div class="flex items-baseline justify-between">
-                        <div>
-                            
-                            <div class="text-xl font-black text-slate-900 tracking-tight">69.599,00 TL</div>
-                        </div>
-                    </div>
-                    
-                    
-                    <a href="https://www.amazon.com.tr/dp/B0H1JC7MS2?tag=firsatavcis0b-21" target="_blank" rel="noopener nofollow" class="mt-4 w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-bold text-xs py-3 px-4 rounded-xl shadow-md shadow-amber-500/20 transition flex items-center justify-center gap-2">
-                        <span>Amazon'da İncele & Satın Al</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between overflow-hidden group">
-            <div class="relative bg-slate-50 aspect-square p-6 flex items-center justify-center overflow-hidden border-b border-slate-100">
-                
-                <img src="https://m.media-amazon.com/images/I/71HvqbgjJGL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte" alt="30 günün en düşük fiyatı" class="w-full h-full object-contain group-hover:scale-105 transition duration-500" loading="lazy">
-            </div>
-            
-            <div class="p-5 flex-1 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-1.5 text-[11px] font-bold text-amber-600 uppercase tracking-wider mb-1.5">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                        Amazon Fırsatı
-                    </div>
-                    <h3 class="font-bold text-slate-800 text-sm leading-snug line-clamp-2 mb-2 group-hover:text-amber-600 transition">
-                        30 günün en düşük fiyatı
-                    </h3>
-                </div>
-
-                <div class="pt-4 border-t border-slate-100">
-                    <div class="flex items-baseline justify-between">
-                        <div>
-                            <span class="text-xs text-slate-400 line-through">45.279,20 TL</span>
-                            <div class="text-xl font-black text-slate-900 tracking-tight">44.369,00 TL</div>
-                        </div>
-                    </div>
-                    <div class="mt-2 text-[11px] font-semibold text-emerald-600 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded inline-block">✓ 910,20 TL Kazanç</div>
-                    
-                    <a href="https://www.amazon.com.tr/dp/B0H2FJ6VL8?tag=firsatavcis0b-21" target="_blank" rel="noopener nofollow" class="mt-4 w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-bold text-xs py-3 px-4 rounded-xl shadow-md shadow-amber-500/20 transition flex items-center justify-center gap-2">
-                        <span>Amazon'da İncele & Satın Al</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
         </div>
     </main>
+
+    <!-- SEO Knowledge & FAQ Section (Google Snippets Booster) -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+        <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-sm">
+            <h2 class="text-xl sm:text-2xl font-black text-slate-900 mb-6 flex items-center gap-2">
+                <span>💡 Amazon İndirim & Kupon Rehberi (Sıkça Sorulan Sorular)</span>
+            </h2>
+            <div class="space-y-6 text-sm text-slate-700">
+                <div class="border-b border-slate-100 pb-4">
+                    <h3 class="font-bold text-slate-900 mb-1">Amazon promosyon kodu ödeme adımında nasıl kullanılır?</h3>
+                    <p class="text-slate-600 leading-relaxed text-xs sm:text-sm">
+                        İlgilendiğiniz ürünleri sepete ekledikten sonra "Alışverişi Tamamla" butonuna tıklayın. Ödeme yöntemleri sayfasında yer alan <b>"Hediye kartı, promosyon kodu veya kupon ekleyin"</b> bölümündeki <b>"Kodu girin"</b> kutusuna yukarıdaki kodlardan birini yapıştırıp "Uygula" butonuna basın. İndirim sepet toplamınıza anında yansır.
+                    </p>
+                </div>
+                <div class="border-b border-slate-100 pb-4">
+                    <h3 class="font-bold text-slate-900 mb-1">Amazon kuponlu ürünler ile sepet promosyon kodları birleşir mi?</h3>
+                    <p class="text-slate-600 leading-relaxed text-xs sm:text-sm">
+                        Evet! Birçok kampanyada ürün sayfasında "Kuponu Uygula" kutucuğunu işaretledikten sonra, ödeme adımında geçerli bir promosyon kodu (örn: GULUMSE100 veya APP150) girerek çifte indirim elde edebilirsiniz.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-1">Fırsat Radarı indirimleri ne sıklıkla güncellenir?</h3>
+                    <p class="text-slate-600 leading-relaxed text-xs sm:text-sm">
+                        Fırsat Radarı otopilot botumuz Amazon Türkiye'yi her 20 dakikada bir tarayarak tükenen stokları kaldırır ve en yüksek oranda fiyatı düşen flaş fırsatları kataloğa ekler.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 text-xs py-12 border-t border-slate-800">
